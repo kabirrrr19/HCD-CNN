@@ -41,28 +41,28 @@ html,body,h2,h3,h4 {font-family: Helvetica, sans-serif}
 </head>
 
 
-<body class="w3-pale-blue">
+<body class="w3-black">
 
 
 
 <!-- w3-content defines a container for fixed size centered content,
 and is wrapped around the whole page content. -->
-<div class="w3-content card" style="max-width:960px">
+<div class="w3-content" style="max-width:960px">
 
 
 
 <!-- 1. HOME PAGE TAB -->
-<div class="tabbed w3-animate-opacity w3-white" id="home">
+<div class="tabbed w3-animate-opacity w3-light-grey" id="home">
 
 
 
 <!-- Header -->
 <div class="w3-center title adjust-fontcolor logo">
 	
-  <h1 class="space-letters w3-text-purple"><i class='fas fa-microscope w3-padding w3-text-teal' style='font-size:40px'></i><b>Breast Cancer Analyzer</b></h1>
-  <h5 class="space-letters w3-text-red">for Histopathology Image Patches</h5>
+  <h1 class="space-letters w3-text-black"><i class="fas fa-ribbon" style="color: #ffb8e0;"></i><b> Breast Cancer Analyzer</b></h1>
+  <h5 class="space-letters w3-text-blue">for Histopathology Image Patches</h5>
   
-  <h5 class="space-letters tag-font w3-text-red"><b>powered by<br> Artificial Intelligence</b></h5>
+  <!-- <h5 class="space-letters tag-font w3-text-red"><b>powered by<br> Artificial Intelligence</b></h5> -->
 </div>
 
 
@@ -80,13 +80,13 @@ and is wrapped around the whole page content. -->
 
 
 <div class="w3-center">
-	<div class="progress-bar">Ai is Loading...</div>
+	<div class="progress-bar">Working behind the scenes...</div>
 </div>
 
 
 <div class="w3-center add-margin side-margin w3-round w3-pale-red w3-animate-opacity">
 		
-	<h5 class='breast-cancer new-font w3-text-purple'><i class='fas fa-circle w3-padding w3-text-red' style='font-size:10px'></i>IDC Analyzer</h5>
+	<h5 class='breast-cancer new-font w3-text-purple'><i class='fas fa-circle w3-padding w3-text-red' style='font-size:10px'></i>Invasive Ductal Carcinoma Analyzer</h5>
 		
 </div>
 
@@ -98,7 +98,7 @@ and is wrapped around the whole page content. -->
 
 
 
-<div class="dont-break-out w3-center add-padding w3-border add-margin side-margin w3-round w3-pale-blue">
+<div class="dont-break-out w3-center add-padding w3-border add-margin side-margin w3-round w3-pale-green">
 		
 	<h5 class='new-font'>Results</h5>
 	<ol class='w3-left-align' id='prediction-list'></ol>
@@ -106,7 +106,7 @@ and is wrapped around the whole page content. -->
 </div>
 
 
-<div class="add-padding w3-border add-margin side-margin w3-round w3-padding w3-text-teal">
+<div class="add-padding w3-border add-margin side-margin w3-round w3-padding w3-text-black w3-pale-blue">
 	
 	<p>What would you like to detect?</p>
 	
@@ -124,9 +124,8 @@ and is wrapped around the whole page content. -->
 <!-- Button -->
 <div id="btnn" class="w3-center bottom-padding">
 	
-	<button class="w3-btn w3-purple w3-round w3-margin-bottom adjust-spacing w3-hover-red btn-font w3-padding w3-space-letters w3-card-4" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)"><i class='fas fa-camera w3-padding-right' style='font-size:15px'></i><b>Submit Images</b></button>
-	
-	<p class="w3-text-teal">jpeg or png</p>
+	<button class="w3-btn w3-deep-purple w3-round w3-margin-bottom adjust-spacing w3-hover-blue btn-font w3-padding w3-space-letters w3-card-4" onclick="setTimeout(simulateClick.bind(null, 'image-selector'), 200)"><i class="fas fa-solid fa-upload"></i><b> Submit Images</b></button>
+	<p class="w3-text-teal">jpeg or png image only</p>
 </div> 
 
 
@@ -134,10 +133,10 @@ and is wrapped around the whole page content. -->
 
 
 
-
+<!-- 
 <div class='w3-padding'>
 	<p class='w3-round w3-margin w3-margin-bottom w3-text-teal'>Please Note: This is a prototype.</p>
-</div>
+</div> -->
 
 
 </div><!--END OF HOME PAGE TAB-->

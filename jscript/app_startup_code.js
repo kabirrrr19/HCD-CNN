@@ -86,8 +86,8 @@ $('#breast_cancer_input').change(function(){
 let breast_cancer_model;
 (async function () {
 	
-	breast_cancer_model = await tf.loadModel('http://histo.test.woza.work/idc_model_v1/model.json');
-	$("#selected-image").attr("src", "http://histo.test.woza.work/assets/normal.png");
+	breast_cancer_model = await tf.loadModel('../idc_model_v1/model.json');
+	$("#selected-image").attr("src", "../assets/normal.jpg");
 	
 })();
 
@@ -99,8 +99,8 @@ let breast_cancer_model;
 let met_cancer_model;
 (async function () {
 	
-	met_cancer_model = await tf.loadModel('http://histo.test.woza.work/metastatic_model_v1/model.json');
-	$("#selected-image").attr("src", "http://histo.test.woza.work/assets/normal.png");
+	met_cancer_model = await tf.loadModel('../metastatic_model_v1/model.json');
+	$("#selected-image").attr("src", "../assets/normal.jpg");
 	
 	// Hide the model loading spinner
 	$('.progress-bar').hide();
